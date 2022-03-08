@@ -12,19 +12,17 @@ void bisection(double a, double b)
 	double c=a;
 	int itr=0;
 
-	while ((b-a) >= EPSILON)
+	while (fabs(func(c))<=EPSILON)
 	{
 	    itr++;
 		c=(a+b)/2;
-		if(fabs(func(c))<=EPSILON)
-			break;
-		else if (func(c)*func(a) < 0)
+		if (func(c)*func(a) < 0)
 			b=c;
 		else
 			a=c;
 	}
-	printf("The value of root is %.9lf\n", c);
-	printf("No. of iteration %d", itr);
+	printf("The value of root: %.9lf\n", c);
+	printf("No. of iteration: %d", itr);
     return;
 }
 
