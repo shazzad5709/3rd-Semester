@@ -1,0 +1,9 @@
+15
+7
+2 3 4 2 5 4 1
+7 6 9 6 12 10 3
+
+line 1- total capacity of knapsack
+line 2- number of items
+line 3- array of weights of each items
+line 4- array of profits of each items
