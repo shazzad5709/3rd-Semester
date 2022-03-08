@@ -12,7 +12,7 @@ void bisection(double a, double b)
 	double c=a;
 	int itr=0;
 
-	while (fabs(func(c))<=EPSILON)
+	while(fabs(func(c))>=EPSILON)
 	{
 	    itr++;
 		c=(a+b)/2;
