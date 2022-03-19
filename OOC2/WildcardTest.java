@@ -11,10 +11,10 @@ public class WildcardTest {
         System.out.printf("intList contains: %s%n", intList);
         System.out.printf("Sum of elemets in intList: %.0f%n", sum(intList));
 
-        Double[] d={1, 2, 3, 4, 5};
-        ArrayList<Integer> dList = new ArrayList<Double>();
+        Double[] d={1.1, 2.2, 3.2, 4.4, 5.5};
+        ArrayList<Double> dList = new ArrayList<Double>();
 
-        for(Double element: ints)
+        for(Double element: d)
             dList.add(element);
         
         System.out.printf("intList contains: %s%n", dList);
