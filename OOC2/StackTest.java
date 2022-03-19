@@ -14,4 +14,71 @@ public class StackTest {
         testPushInteger();
         testPushInteger();
     }
+
+    public void testPushDouble() {
+        try {
+            System.out.println("\nPushing elements onto doubleStack");;
+
+            for(double element: doubleElements) {
+                System.out.printf("%.1f ", element);
+                doubleStack.push(element);
+            }
+        } 
+        catch (FullStackException fullStackException) {
+            System.err.println();
+            fullStackException.printStackTrace();
+        }
+    }
+
+    public void testPopDouble() {
+        try {
+            System.out.println("\nPopping elements from doubleStack");;
+
+            double popValue;
+            while(true) {
+                popValue=doubleStack.pop();
+                System.out.printf("%.1f ", popValue);
+            }
+        } 
+        catch (EmptyStackException emptyStackException) {
+            System.err.println();
+            emptyStackException.printStackTrace();
+        }
+    }
+
+    public void testPushInteger() {
+        try {
+            System.out.println("\nPushing elements onto integerStack");;
+
+            for(int element: integerElements) {
+                System.out.printf("%.1f ", element);
+                integerStack.push(element);
+            }
+        } 
+        catch (FullStackException fullStackException) {
+            System.err.println();
+            fullStackException.printStackTrace();
+        }
+    }
+
+    public void testPopInteger() {
+        try {
+            System.out.println("\nPopping elements from integerStack");;
+
+            int popValue;
+            while(true) {
+                popValue=integerStack.pop();
+                System.out.printf("%.1f ", popValue);
+            }
+        } 
+        catch (EmptyStackException emptyStackException) {
+            System.err.println();
+            emptyStackException.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) {
+        StackTest application = new StackTest();
+        application.testStacks();
+    }
 }
