@@ -51,7 +51,7 @@ public class StackTest {
             System.out.println("\nPushing elements onto integerStack");;
 
             for(int element: integerElements) {
-                System.out.printf("%.1f ", element);
+                System.out.printf("%d ", element);
                 integerStack.push(element);
             }
         } 
