@@ -6,7 +6,6 @@ int parent[N];
 
 struct we_ed
 {
-
 	int weight;
 	int node1;
 	int node2;
@@ -17,6 +16,7 @@ bool cmp(struct we_ed a, struct we_ed b)
 {
 	return a.weight <= b.weight;
 }
+
 void make_set(int n)
 {
 	parent[n] = n;
