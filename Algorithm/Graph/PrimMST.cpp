@@ -85,7 +85,7 @@ void primMST(int graph[V][V])
 int main()
 {
 	/* Let us create the following graph
-		2 3
+		2   3
 	(0)--(1)--(2)
 	| / \ |
 	6| 8/ \5 |7
